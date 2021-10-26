@@ -1,0 +1,36 @@
+.button {
+  padding: 0.6em 1em;
+  margin: 0.6em;
+  border: none;
+  outline: none;
+  background: var(--secundary-bg);
+  font-size: 1.2em;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.buttonWave {
+  width: 0;
+  height: 0;
+  position: absolute;
+  box-shadow: 0 0 10px #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: block;
+  animation-duration: 1.5s;
+  animation-name: wave;
+  pointer-events: none;
+  animation-iteration-count: 1;
+}
+
+@keyframes wave {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 250px;
+    height: 250px;
+  }
+}

@@ -1,0 +1,20 @@
+.inputColor {
+  padding: 0.3em;
+  margin: 0.3em;
+  display: block;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  border: 3px solid #000;
+  margin: auto;
+}
+
+.inputColor > input {
+  display: none;
+}
+
+.colorsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}

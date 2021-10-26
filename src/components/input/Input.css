@@ -1,0 +1,50 @@
+.input {
+  position: relative;
+  height: 3em;
+  margin-bottom: 0.6em;
+  color: var(--secundary-bg);
+  width: 200px;
+}
+
+.input__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dadce0;
+  background: none;
+  padding: 1em;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+.input__label {
+  position: absolute;
+  top: 0.6em;
+  left: 1em;
+  color: #80868b;
+  padding: 0 0.3em;
+  font-size: 1.2em;
+  background: var(--primary-bg);
+  transition: 0.2s;
+}
+
+.input__input:focus + .input__label {
+  top: -0.5em;
+  left: 1em;
+  font-size: 1em;
+  color: var(--secundary-bg);
+}
+
+.input__input:valid + .input__label {
+  top: -0.5em;
+  left: 1em;
+  font-size: 1em;
+}
+
+.input__input:focus {
+  border-color: var(--secundary-bg);
+}

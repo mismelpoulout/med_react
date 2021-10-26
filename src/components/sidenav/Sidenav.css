@@ -1,0 +1,42 @@
+:root {
+  --sidenav-translateX: 0px;
+  --sidenav-opacity: 0;
+  --sidenav-maxWidth: 300px;
+}
+
+.sidenav {
+  width: 100%;
+  max-width: var(--sidenav-maxWidth);
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  opacity: var(--sidenav-opacity);
+  transform: translateX(
+    calc(var(--sidenav-translateX) - var(--sidenav-maxWidth))
+  );
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+.sidenav.active {
+  transition: 0.3s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0, 0, 0, calc(var(--sidenav-opacity) - 0.5));
+  pointer-events: none;
+}
+
+.overlay.active {
+  pointer-events: all;
+}

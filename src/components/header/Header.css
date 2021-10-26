@@ -1,0 +1,13 @@
+header {
+  background: var(--secundary-bg);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 3em;
+  height: 3em;
+  padding: 0.6em;
+}

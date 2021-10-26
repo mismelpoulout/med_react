@@ -1,0 +1,29 @@
+.question__options {
+  margin: 1em;
+  list-style: none;
+  font-size: 1.1em;
+}
+
+.question__option:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.question__option {
+  margin-top: 0.3em;
+}
+.question__option > input {
+  display: none;
+}
+
+.question__option > input:checked + label {
+  background: var(--secundary-bg);
+  color: #fff;
+}
+
+.question__option > label {
+  padding: 0.9em 0.9em 0.9em 1em;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}

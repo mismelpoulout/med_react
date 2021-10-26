@@ -1,0 +1,24 @@
+.homeCard {
+  color: #fff;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 0.3em 1em;
+  text-shadow: 0 0 3px #000;
+  background-size: cover;
+  background: linear-gradient(0, #0f1a56, #2196f3);
+  background-size: cover;
+  transition: 0.2s;
+  height: 15em;
+  text-decoration: none;
+
+}
+
+.homeCard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.homeCard > .card__title {
+  font-size: 1.6em;
+  padding-bottom: 0.2em;
+}

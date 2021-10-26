@@ -1,0 +1,33 @@
+input[role="switch"] {
+  appearance: none;
+  padding: 3px;
+  outline: none;
+  width: 3em;
+  border-radius: 6px;
+  height: 1em;
+  background: #666;
+}
+
+.switchButton {
+  position: relative;
+}
+
+.switchButton > span {
+  position: absolute;
+  pointer-events: none;
+  top: -6px;
+  left: -3px;
+  width: 27px;
+  height: 27px;
+  background: #aaa;
+  border-radius: 50%;
+  transition: var(--animation-dur);
+}
+
+input[role="switch"]:checked + span {
+  transform: translateX(19px);
+  background: #68c100;
+}
+input[role="switch"]:checked {
+  background: #54861a;
+}
