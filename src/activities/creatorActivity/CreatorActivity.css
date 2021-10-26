@@ -1,0 +1,11 @@
+.creatorStep__textArea {
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 0 10px var(--primary-bg);
+  padding: 0.6em;
+  resize: vertical;
+  font-family: var(--font);
+  width: calc(100% - 2em);
+  margin: 1em;
+}
